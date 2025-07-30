@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Card</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .profile-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .profile-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 2rem 1rem;
+            text-align: center;
+            color: white;
+        }
+        
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border: 3px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            margin-bottom: 1rem;
+        }
+        
+        .profile-name {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 0;
+        }
+        
+        .profile-title {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin: 0.5rem 0 0 0;
+        }
+        
+        .info-list {
+            background: white;
+            border-radius: 0;
+        }
+        
+        .info-item {
+            border: none;
+            border-bottom: 1px solid #f0f0f0;
+            padding: 1rem 1.5rem;
+        }
+        
+        .info-item:last-child {
+            border-bottom: none;
+        }
+        
+        .info-label {
+            color: #666;
+            font-weight: 500;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .info-value {
+            color: #333;
+            font-weight: 600;
+        }
+        
+        .status-badge {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+        
+        .action-buttons {
+            padding: 1.5rem;
+            text-align: center;
+            background: #f8f9fa;
+        }
+        
+        .btn-custom {
+            border-radius: 20px;
+            padding: 0.6rem 1.5rem;
+            font-weight: 600;
+            margin: 0.2rem;
+        }
+        
+        .btn-primary-custom {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            color: white;
+        }
+        
+        .btn-outline-custom {
+            background: transparent;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="profile-card">
+                    <!-- Profile Header -->
+                    <div class="profile-header">
+                        <img src="Ziya_KV .jpg" 
+                             alt="Profile Picture" 
+                             class="profile-img rounded-circle mx-auto d-block img-fluid">
+                        <h2 class="profile-name">Ziya KV</h2>
+                        <p class="profile-title">Computer Science Student</p>
+                    </div>
+                    
+                    <!-- User Information -->
+                    <ul class="list-group info-list list-group-flush">
+                        <li class="list-group-item info-item d-flex justify-content-between align-items-center">
+                            <div class="info-label">
+                                <i class="fas fa-user text-primary"></i>
+                                Full Name
+                            </div>
+                            <div class="info-value">Ziya Kinakkool Vayalippath</div>
+                        </li>
+                        <li class="list-group-item info-item d-flex justify-content-between align-items-center">
+                            <div class="info-label">
+                                <i class="fas fa-envelope text-primary"></i>
+                                Email ID
+                            </div>
+                            <div class="info-value">ziaraeez@email.com</div>
+                        </li>
+                        <li class="list-group-item info-item d-flex justify-content-between align-items-center">
+                            <div class="info-label">
+                                <i class="fas fa-graduation-cap text-primary"></i>
+                                Course
+                            </div>
+                            <div class="info-value">Computer Science and Design</div>
+                        </li>
+                        <li class="list-group-item info-item d-flex justify-content-between align-items-center">
+                            <div class="info-label">
+                                <i class="fas fa-university text-primary"></i>
+                                Institution
+                            </div>
+                            <div class="info-value">FISAT</div>
+                        </li>
+                        <li class="list-group-item info-item list-group-item-success d-flex justify-content-between align-items-center">
+                            <div class="info-label">
+                                <i class="fas fa-circle-check text-success"></i>
+                                Status
+                            </div>
+                            <span class="status-badge">Active</span>
+                        </li>
+                    </ul>
+                    
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                        <button class="btn btn-custom btn-primary-custom">
+                            <i class="fas fa-edit me-2"></i>Edit Profile
+                        </button>
+                        <button class="btn btn-custom btn-outline-custom">
+                            <i class="fas fa-eye me-2"></i>View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
